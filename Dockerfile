@@ -1,6 +1,6 @@
 FROM archlinux:latest
 
-RUN pacman -Sy base-devel lua51 lua52 lua53 lua sqlite postgresql postgresql-libs luarocks redis tup mariadb libmariadbclient mariadb-clients openssl-1.0 git --noconfirm && (yes | pacman -Scc || :)
+RUN pacman -Sy base-devel lua51 lua52 lua53 lua sqlite postgresql postgresql-libs luarocks redis tup mariadb libmariadbclient mariadb-clients openssl-1.1 git --noconfirm && (yes | pacman -Scc || :)
 
 # setup openresty
 ARG OPENRESTY_VERSION="1.21.4.2rc1"
